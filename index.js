@@ -11,7 +11,10 @@ app.use(bp.urlencoded({ extended: false }));
 app.use(bp.json());
 
 mongoose
-  .connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(
+    "mongodb+srv://alirazamdani:admin1996@cluster0.nymrktg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+    { useNewUrlParser: true, useUnifiedTopology: true }
+  )
   .then(() => {
     console.log("Connected to MongoDB");
   })
