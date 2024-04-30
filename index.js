@@ -23,13 +23,7 @@ mongoose
     res.send("Hello World")
  }) 
  
- app.get("/Product", (req, res) => {
-    res.send("Prodcut Main Page")
- }) 
- 
- app.get("/Product/:id", (req, res) => {
-    res.send("Product Item Page")
- }) 
+
 app.listen(PORT, () => {
   console.log(`Server is Running ${PORT}`);
 });
