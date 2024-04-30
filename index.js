@@ -25,11 +25,11 @@ app.use(bp.json());
 app.get("/", (req, res) => {
   res.send("Hello World");
 });
-app.get("Product", (req, res) => {
+app.get("/Product", (req, res) => {
   res.send("Prodcut Page");
 });
 
-app.get("Product/:id", (req, res) => {
+app.get("/Product/:id", (req, res) => {
   res.send("Product Item Page");
 });
 app.listen(PORT, () => {
